@@ -20,3 +20,17 @@ composer update
 
 --> Sail Alias Ata (alias aliasları listeler - unalias sail silme komutu)
 alias sail="bash vendor/bin/sail"
+
+
+sudo chmod -R ug+rwx storage bootstrap/cache
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1 -> mysql
+DB_PORT=3306
+
+php artisan route:cache
+php artisan cache:clear
+php artisan config:cache
+php artisan view:clear
+php artisan optimize
+php artisan route:trans:cache
