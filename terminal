@@ -23,6 +23,8 @@ alias sail="bash vendor/bin/sail"
 
 
 sudo chmod -R ug+rwx storage bootstrap/cache
+chmod -R 775 storage
+chmod -R 755 bootstrap/cache
 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1 -> mysql
