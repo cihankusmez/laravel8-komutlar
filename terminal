@@ -36,3 +36,12 @@ php artisan config:cache
 php artisan view:clear
 php artisan optimize
 php artisan route:trans:cache
+
+
+
+
+
+
+php artisan route:clear
+php artisan config:clear
+php artisan cache:clear
